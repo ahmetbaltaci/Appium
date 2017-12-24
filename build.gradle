@@ -1,0 +1,45 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group = 'allurereportexample'
+version = '1.0-SNAPSHOT'
+
+description = "Foreks Test Automation"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+repositories {
+    jcenter()
+}
+
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.1.1'
+    compile group: 'io.appium', name: 'java-client', version: '4.1.2'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+}
+
+
+test {
+    useTestNG() {
+        scanForTestClasses = false
+        suites 'src/testCase/java/com/foreks/testCase/suites/main.xml'
+        ignoreFailures = true
+    }
+    testLogging {
+        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+    }
+    systemProperty 'env', System.getProperty('env', 'all')
+}
+
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
