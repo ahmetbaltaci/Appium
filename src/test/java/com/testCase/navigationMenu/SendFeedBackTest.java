@@ -10,7 +10,7 @@ import com.page.NavigationMenuTestFunction;
  * Created by ahmetbaltaci on 24.12.2017.
  */
 
-@Listeners(TestListener.class)
+@Listeners({TestListener.class})
 public class SendFeedBackTest extends BaseTest {
 
     @Test

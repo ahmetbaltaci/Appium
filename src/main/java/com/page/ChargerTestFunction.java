@@ -3,6 +3,8 @@ package com.page;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -28,7 +30,9 @@ public class ChargerTestFunction extends BasePage {
         super(driver);
     }
 
+    @Step("Charger Test and charger is tested")
     public void chargerTest() throws InterruptedException {
+        Allure.addDescription("Click Hardware Button");
         click(hardwareButton);
         click(chargerButton);
         click(startButton);
@@ -37,6 +41,7 @@ public class ChargerTestFunction extends BasePage {
         click(closeButton);
     }
 
+    @Step("Click hardware button and hardware button is tested")
     public void hardwareButtonControlTest() throws InterruptedException {
         click(hardwareButton);
         click(hardwareButtonControl);

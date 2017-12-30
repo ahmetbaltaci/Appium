@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure2-model-api:1.0-BETA6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-api/1.0-BETA6/6f5af1613004e32f8582669f299fabe9cae2ed53/allure2-model-api-1.0-BETA6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-api/1.0-BETA6/df15ebddf91fa00a2aff66ebafff804d1bc8ec44/allure2-model-api-1.0-BETA6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-api/1.0-BETA6/a796c5b0bffd07127d4808e6fa3a19cd19152599/allure2-model-api-1.0-BETA6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

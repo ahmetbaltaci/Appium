@@ -1,8 +1,14 @@
+plugins {
+    id 'java'
+    id 'ru.vyarus.quality' version '2.2.0'
+    id "io.qameta.allure" version "2.5"
+}
+
 apply plugin: 'java'
 apply plugin: 'idea'
 
 
-group = 'allurereportexample'
+group = 'TestM'
 version = '1.0-SNAPSHOT'
 
 description = "Foreks Test Automation"
@@ -13,24 +19,33 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-
 repositories {
     jcenter()
 }
 
+configurations {
+    agent
+}
+
+test.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
 
 dependencies {
-    compile group: 'org.testng', name: 'testng', version: '6.1.1'
+    agent "org.aspectj:aspectjweaver:1.8.10"
+    compile group: 'org.testng', name: 'testng', version: '6.9.5'
     compile group: 'io.appium', name: 'java-client', version: '4.1.2'
     compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
     compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
+    compile group: 'ru.yandex.qatools.ashot', name: 'ashot', version: '1.5.4'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.0-BETA20'
 }
-
 
 test {
     useTestNG() {
         scanForTestClasses = false
-        suites 'src/testCase/java/com/foreks/testCase/suites/main.xml'
+        suites 'TestNG.xml'
         ignoreFailures = true
     }
     testLogging {
@@ -39,9 +54,19 @@ test {
     systemProperty 'env', System.getProperty('env', 'all')
 }
 
+allure {
+    autoconfigure = true
+    version = '2.5.0'
+    useTestNG {
+        version = '2.0-BETA15'
+    }
+}
+
 idea {
     module {
         downloadJavadoc = true
         downloadSources = true
     }
 }
+
+//allure serve allure-results

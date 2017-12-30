@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure-java-commons:2.0-BETA21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-java-commons/2.0-BETA21/be4cdeb2fd93071b01df1ec47fc3fafd692799e4/allure-java-commons-2.0-BETA21.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-java-commons/2.0-BETA21/b5d09b26df7c9cc91b660905171e5c617ce1ff5e/allure-java-commons-2.0-BETA21-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-java-commons/2.0-BETA21/636d6f63cbba7f6fddba934fd86265e33e6245e/allure-java-commons-2.0-BETA21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

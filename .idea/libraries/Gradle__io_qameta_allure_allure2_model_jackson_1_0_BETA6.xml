@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure2-model-jackson:1.0-BETA6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-jackson/1.0-BETA6/c313a7059f078c95bb350b75e75fc108fbacc8ee/allure2-model-jackson-1.0-BETA6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-jackson/1.0-BETA6/d50b752f601fb97b9b2e41af5304b022a2f34377/allure2-model-jackson-1.0-BETA6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-jackson/1.0-BETA6/3e269833f7644ad854557528ac260e7b5616dcad/allure2-model-jackson-1.0-BETA6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -9,7 +9,6 @@ import java.net.UnknownHostException;
 public class GetIp {
 
     public String getIP() {
-
         InetAddress ip;
         String result = null;
         try {

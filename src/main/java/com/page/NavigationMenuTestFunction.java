@@ -1,6 +1,7 @@
 package com.page;
 
 import io.appium.java_client.AppiumDriver;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 /**
@@ -24,6 +25,7 @@ public class NavigationMenuTestFunction extends BasePage {
         super(driver);
     }
 
+    @Step("Open Navigation Menu Bar")
     public void openNavigationMenu() throws InterruptedException {
         boolean status = false;
         do {
@@ -33,6 +35,7 @@ public class NavigationMenuTestFunction extends BasePage {
         } while (!status);
     }
 
+    @Step("Click SendFeedBack Button and Submit Form")
     public void sendFeedBackFrom() throws InterruptedException {
         click(sendFeedBackButton);
         driver.findElement(name).sendKeys("test");

@@ -9,7 +9,7 @@ import org.testng.Assert;
 class BasePage {
 
     public AppiumDriver driver;
-    public By closeButton = By.id("com.testm.app:id/back_cancel_button");
+    By closeButton = By.id("com.testm.app:id/back_cancel_button");
 
     //Constructor
     BasePage(AppiumDriver driver) {
@@ -19,7 +19,7 @@ class BasePage {
 
     void click(By element) throws InterruptedException {
         boolean clickStatus = false;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 15; i++) {
             try {
                 WebElement clickElement = driver.findElement(element);
                 Assert.assertTrue(clickElement.isEnabled());

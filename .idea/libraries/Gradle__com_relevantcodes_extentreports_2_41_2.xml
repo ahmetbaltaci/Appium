@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.relevantcodes:extentreports:2.41.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/f3cfee1e734668ac4e3574a9b47ad735476b4b04/extentreports-2.41.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/44a8fe33e4531850b9ec29882138ea1d4dbc03a6/extentreports-2.41.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/c7d62544acd98c430b3295a693809479b8c16ba6/extentreports-2.41.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
