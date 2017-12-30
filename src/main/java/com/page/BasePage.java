@@ -1,9 +1,9 @@
-package page;
+package com.page;
 
 import io.appium.java_client.AppiumDriver;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 
 class BasePage {
@@ -86,7 +86,7 @@ class BasePage {
             boolean status=false;
             String exceptionMsg = "";
             try {
-                org.testng.Assert.assertEquals(getText(element),text);
+                Assert.assertEquals(getText(element),text);
                 status=true;
             }catch (Exception | AssertionError e){
                 exceptionMsg=e.getMessage();

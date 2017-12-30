@@ -1,8 +1,7 @@
-package page;
+package com.page;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 
 /**
  * Created by ahmetbaltaci on 24.12.2017.

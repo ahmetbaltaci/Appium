@@ -1,10 +1,11 @@
-package page;
+package com.page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+
 
 /**
  * Created by ahmetbaltaci on 23.12.2017.

@@ -4,7 +4,7 @@ import Listener.TestListener;
 import com.setup.BaseTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import page.ChargerTestFunction;
+import com.page.ChargerTestFunction;
 
 /**
  * Created by ahmetbaltaci on 22.12.2017.

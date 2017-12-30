@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 
+
 group = 'allurereportexample'
 version = '1.0-SNAPSHOT'
 
@@ -19,9 +20,10 @@ repositories {
 
 
 dependencies {
-    testCompile group: 'org.testng', name: 'testng', version: '6.1.1'
+    compile group: 'org.testng', name: 'testng', version: '6.1.1'
     compile group: 'io.appium', name: 'java-client', version: '4.1.2'
     compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }
 
 

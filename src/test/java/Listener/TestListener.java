@@ -1,18 +1,33 @@
 package Listener;
 
 import com.setup.BaseTest;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import com.setup.GetDeviceCapability;
+import com.setup.GetEnvironment;
+import com.setup.GetIp;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.MDC;
+import org.testng.*;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by ahmetbaltaci on 23.12.2017.
  */
-public class TestListener extends BaseTest implements ITestListener {
+public class TestListener extends BaseTest implements ITestListener,ISuiteListener {
+
+    private Logger log = LogManager.getLogger(getClass().getName());
+    private long testStartTime;
+    private GetDeviceCapability capability = new GetDeviceCapability();
+    private GetEnvironment environment = new GetEnvironment();
+
 
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("start test");
+        MDC.put("deviceName", capability.getCapability("deviceName"));
+        MDC.put("platformVersion", capability.getCapability("platformVersion"));
+        MDC.put("appVersion", environment.getEnvironment("appVersion"));
+        System.out.println(environment.getEnvironment("appVersion"));
     }
 
     @Override
@@ -37,12 +52,27 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("on start test");
+        setTestCaseName(context.getName());
+        MDC.put("testCaseName", getTestCaseName());
+        GetIp ip = new GetIp();
+        MDC.put("ip", ip.getIP());
+        testStartTime = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        System.out.println("finish test");
+        long testFinishTime = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
+        long testDuration = testFinishTime - testStartTime;
+        MDC.put("testDuration", testDuration);
     }
 
+    @Override
+    public void onStart(ISuite suite) {
+        suite.getXmlSuite().getName();
+    }
+
+    @Override
+    public void onFinish(ISuite suite) {
+
+    }
 }

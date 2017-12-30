@@ -4,7 +4,6 @@ package com.setup;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -15,8 +14,9 @@ import java.io.IOException;
 
 public class GetEnvironment {
 
+    private String env = System.getProperty("getEnvironment");
 
-    public JsonObject env() throws FileNotFoundException {
+   public String getEnvironment(String param)  {
         JsonObject jsonObject = null;
         try {
             JsonParser parser = new JsonParser();
@@ -26,6 +26,8 @@ public class GetEnvironment {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return jsonObject;
+        env = env == null ?"local":env;
+        assert jsonObject != null;
+        return jsonObject.getAsJsonObject(env).getAsJsonPrimitive(param).getAsString();
     }
 }

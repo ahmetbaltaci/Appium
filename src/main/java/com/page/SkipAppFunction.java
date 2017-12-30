@@ -1,4 +1,4 @@
-package page;
+package com.page;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
@@ -22,11 +22,11 @@ public class SkipAppFunction extends BasePage {
         } catch (AssertionError e) {
             Thread.sleep(10);
         }
-     /*   try {
+        try {
             driver.tap(1, 400, 600, 2000);
         } catch (Exception e) {
             Thread.sleep(10);
         }
-        click(gotItButton);*/
+        click(gotItButton);
     }
 }

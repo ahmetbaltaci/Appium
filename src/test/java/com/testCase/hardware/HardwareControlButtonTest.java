@@ -2,7 +2,7 @@ package com.testCase.hardware;
 
 import com.setup.BaseTest;
 import org.testng.annotations.Test;
-import page.ChargerTestFunction;
+import com.page.ChargerTestFunction;
 
 /**
  * Created by ahmetbaltaci on 23.12.2017.

@@ -4,7 +4,7 @@ import Listener.TestListener;
 import com.setup.BaseTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import page.NavigationMenuTestFunction;
+import com.page.NavigationMenuTestFunction;
 
 /**
  * Created by ahmetbaltaci on 24.12.2017.
