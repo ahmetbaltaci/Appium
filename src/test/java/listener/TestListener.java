@@ -82,6 +82,7 @@ public class TestListener extends BaseTest implements ITestListener {
         //Extentreports log and screenshot operations for failed tests.
         ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
                 ExtendTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+        //Log4j
         setTestResult("FAILED");
     }
 
