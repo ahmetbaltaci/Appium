@@ -30,7 +30,7 @@ public class ChargerTestFunction extends BasePage {
         super(driver);
     }
 
-    @Step("Charger Test and charger is tested")
+    @Step("Click hardware button and charger is tested")
     public void chargerTest() throws InterruptedException {
         Allure.addDescription("Click Hardware Button");
         click(hardwareButton);
