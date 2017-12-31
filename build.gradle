@@ -46,7 +46,6 @@ test {
     useTestNG() {
         scanForTestClasses = false
         suites 'TestNG.xml'
-        suites 'TestNG1.xml'
         ignoreFailures = true
     }
     testLogging {

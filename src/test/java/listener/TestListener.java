@@ -8,7 +8,6 @@ import com.setup.GetIp;
 import io.qameta.allure.Attachment;
 import listener.extendManager.ExtendManager;
 import listener.extendManager.ExtendTestManager;
-import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
@@ -25,7 +24,6 @@ import java.util.concurrent.TimeUnit;
 public class TestListener extends BaseTest implements ITestListener {
 
     private String testResult;
-    private Level logLevel;
     private Logger log = LogManager.getLogger(getClass().getName());
     private GetDeviceCapability capability = new GetDeviceCapability();
     private GetEnvironment environment = new GetEnvironment();
@@ -63,13 +61,12 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        setTestResult("PASSED");
         ExtendTestManager.getTest().log(LogStatus.PASS, "Test passed");
+        setTestResult("PASSED");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        setTestResult("FAILED");
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
@@ -85,12 +82,13 @@ public class TestListener extends BaseTest implements ITestListener {
         //Extentreports log and screenshot operations for failed tests.
         ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
                 ExtendTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+        setTestResult("FAILED");
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        setTestResult("SKIPPED");
         ExtendTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+        setTestResult("SKIPPED");
     }
 
     @Override
@@ -100,15 +98,18 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
+        GetIp ip = new GetIp();
         setTestCaseName(context.getName());
         setTestStartTime(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
-        GetIp ip = new GetIp();
         MDC.put("ip", ip.getIP());
         MDC.put("testCaseName", getTestCaseName());
     }
 
     @Override
     public void onFinish(ITestContext context) {
+        ExtendTestManager.endTest();
+        ExtendManager.getReporter().flush();
+        //Log4j
         setTestFinishTime(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
         setTestDurationTime(getTestFinishTime() - getTestStartTime());
         MDC.put("testDuration", getTestDurationTime());
@@ -119,8 +120,6 @@ public class TestListener extends BaseTest implements ITestListener {
         } else {
             log.warn(getTestResult());
         }
-        ExtendTestManager.endTest();
-        ExtendManager.getReporter().flush();
     }
 
 }
