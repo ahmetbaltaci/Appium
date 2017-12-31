@@ -75,8 +75,7 @@ public class TestListener extends BaseTest implements ITestListener {
         saveTextLog(getTestCaseName() + " failed and screenshot taken!");
         //Take base64Screenshot screenshot for extent reports
         assert ((TakesScreenshot) driver) != null;
-        String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).
-                getScreenshotAs(OutputType.BASE64);
+        String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
         //Extentreports log and screenshot operations for failed tests.
         ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
                 ExtendTestManager.getTest().addBase64ScreenShot(base64Screenshot));
