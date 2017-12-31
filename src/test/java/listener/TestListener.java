@@ -67,6 +67,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
+        setTestResult("FAILED");
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
@@ -79,8 +80,6 @@ public class TestListener extends BaseTest implements ITestListener {
         //Extentreports log and screenshot operations for failed tests.
         ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
                 ExtendTestManager.getTest().addBase64ScreenShot(base64Screenshot));
-        //Log4j
-        setTestResult("FAILED");
     }
 
     @Override
@@ -119,5 +118,4 @@ public class TestListener extends BaseTest implements ITestListener {
             log.warn(getTestResult());
         }
     }
-
 }

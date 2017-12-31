@@ -7,9 +7,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.page.ChargerTestFunction;
 
-/**
- * Created by ahmetbaltaci on 23.12.2017.
- */
+
 @Listeners({TestListener.class})
 @Epic("Regression Tests")
 @Feature("Hardware")

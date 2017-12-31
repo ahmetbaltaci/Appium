@@ -16,7 +16,6 @@ class BasePage {
         this.driver = driver;
     }
 
-
     void click(By element) throws InterruptedException {
         boolean clickStatus = false;
         for (int i = 0; i < 15; i++) {
@@ -30,7 +29,6 @@ class BasePage {
                 Thread.sleep(500);
             }
         }
-
         try {
             Assert.assertTrue(clickStatus);
         } catch (AssertionError e) {
@@ -71,7 +69,6 @@ class BasePage {
                 Thread.sleep(500);
             }
         }
-
         try {
             Assert.assertTrue(enableElement);
         } catch (
@@ -99,5 +96,4 @@ class BasePage {
             }
         }
     }
-
 }
