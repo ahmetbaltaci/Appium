@@ -70,9 +70,7 @@ public class TestListener extends BaseTest implements ITestListener {
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
-        if (driver != null) {
-            saveScreenshotPNG(driver);
-        }
+        if (driver != null) {saveScreenshotPNG(driver);}
         //Save a log on allure.
         saveTextLog(getTestCaseName() + " failed and screenshot taken!");
         //Take base64Screenshot screenshot for extent reports
