@@ -1,5 +1,6 @@
 package com.testCase.navigationMenu;
 
+import io.qameta.allure.*;
 import listener.TestListener;
 import com.setup.BaseTest;
 import org.testng.annotations.Listeners;
@@ -11,9 +12,14 @@ import com.page.NavigationMenuTestFunction;
  */
 
 @Listeners({TestListener.class})
+@Epic("Regression Tests")
+@Feature("Navigation Menu Bar")
 public class SendFeedBackTest extends BaseTest {
 
     @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Test Description: Send Feed Back Form is tested. Is it submited ?")
+    @Story("Send Feed Back Form Control")
     public void sendFeedBackTest() throws InterruptedException {
         NavigationMenuTestFunction navigation = new NavigationMenuTestFunction(driver);
         navigation.openNavigationMenu();

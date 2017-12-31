@@ -8,6 +8,7 @@ import com.setup.GetIp;
 import io.qameta.allure.Attachment;
 import listener.extendManager.ExtendManager;
 import listener.extendManager.ExtendTestManager;
+import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.MDC;
@@ -18,27 +19,35 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class TestListener extends BaseTest implements ITestListener {
 
+    private String testResult;
+    private Level logLevel;
     private Logger log = LogManager.getLogger(getClass().getName());
     private GetDeviceCapability capability = new GetDeviceCapability();
     private GetEnvironment environment = new GetEnvironment();
 
-    //Text attachments for Allure
     @Attachment(value = "{0}", type = "text/plain")
     private static String saveTextLog(String message) {
         return message;
     }
 
-    //HTML attachments for Allure
     @Attachment(value = "{0}", type = "text/html")
     public static String attachHtml(String html) {
         return html;
     }
 
-    //Text attachments for Allure
+    private String getTestResult() {
+        return testResult;
+    }
+
+    private void setTestResult(String testResult) {
+        this.testResult = testResult;
+    }
+
     @Attachment(value = "Page screenshot", type = "image/png")
     private byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -54,11 +63,13 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
+        setTestResult("PASSED");
         ExtendTestManager.getTest().log(LogStatus.PASS, "Test passed");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
+        setTestResult("FAILED");
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
@@ -66,7 +77,6 @@ public class TestListener extends BaseTest implements ITestListener {
             saveScreenshotPNG(driver);
         }
         //Save a log on allure.
-
         saveTextLog(getTestCaseName() + " failed and screenshot taken!");
         //Take base64Screenshot screenshot for extent reports
         assert ((TakesScreenshot) driver) != null;
@@ -79,6 +89,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestSkipped(ITestResult result) {
+        setTestResult("SKIPPED");
         ExtendTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
     }
 
@@ -101,6 +112,13 @@ public class TestListener extends BaseTest implements ITestListener {
         setTestFinishTime(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
         setTestDurationTime(getTestFinishTime() - getTestStartTime());
         MDC.put("testDuration", getTestDurationTime());
+        if (Objects.equals(getTestResult(), "PASSED")) {
+            log.info(getTestResult());
+        } else if (Objects.equals(getTestResult(), "FAILED")) {
+            log.error(getTestResult());
+        } else {
+            log.warn(getTestResult());
+        }
         ExtendTestManager.endTest();
         ExtendManager.getReporter().flush();
     }

@@ -12,7 +12,7 @@ import com.page.ChargerTestFunction;
  */
 @Listeners({TestListener.class})
 @Epic("Regression Tests")
-@Feature("Hardware Button")
+@Feature("Hardware")
 public class HardwareControlButtonTest extends BaseTest {
 
     @Test

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Report">
+
+
+    <test name="Charger Test">
+        <classes>
+            <class name="com.testCase.hardware.ChargerTest"/>
+        </classes>
+    </test>
+
+    <test name="Hardware Button Test">
+        <classes>
+            <class name="com.testCase.hardware.HardwareControlButtonTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -8,13 +8,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.page.ChargerTestFunction;
 
-/**
- * Created by ahmetbaltaci on 22.12.2017.
- */
 
 @Listeners({TestListener.class})
 @Epic("Regression Tests")
-@Feature("Charger Plugin")
+@Feature("Hardware")
 public class ChargerTest extends BaseTest {
 
     @Test

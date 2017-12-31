@@ -14,6 +14,7 @@ import java.net.MalformedURLException;
  */
 public class BaseTest {
 
+
     protected static AppiumDriver driver;
     private String env = System.getProperty("getEnvironment");
     private String device;
@@ -60,9 +61,11 @@ public class BaseTest {
     protected void setTestDurationTime(long testDurationTime) {
         this.testDurationTime = testDurationTime;
     }
+
     protected String getTestCaseName() {
         return testCaseName;
     }
+
     protected void setTestCaseName(String testCaseName) {
         this.testCaseName = testCaseName;
     }
@@ -70,18 +73,23 @@ public class BaseTest {
     private String getDevice() {
         return device;
     }
+
     private void setDevice(String device) {
         this.device = device;
     }
+
     private String getVersion() {
         return version;
     }
+
     private void setVersion(String version) {
         this.version = version;
     }
+
     private String getUrl() {
         return url;
     }
+
     private void setUrl(String url) {
         this.url = url;
     }
