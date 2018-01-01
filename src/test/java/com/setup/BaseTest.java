@@ -25,6 +25,7 @@ public class BaseTest {
     private long testFinishTime;
     private long testDurationTime;
     private String suiteName;
+    private String testFailedMsg;
 
     public WebDriver getDriver() {
         return driver;
@@ -68,6 +69,14 @@ public class BaseTest {
 
     protected void setTestCaseName(String testCaseName) {
         this.testCaseName = testCaseName;
+    }
+
+    public String getTestFailedMsg() {
+        return testFailedMsg;
+    }
+
+    public void setTestFailedMsg(String testFailedMsg) {
+        this.testFailedMsg = testFailedMsg;
     }
 
     private String getDevice() {

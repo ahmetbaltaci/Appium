@@ -54,6 +54,7 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         ExtendTestManager.startTest(result.getMethod().getMethodName(), "");
+        MDC.put("testMethodName",result.getName());
         MDC.put("deviceName", capability.getCapability("deviceName"));
         MDC.put("platformVersion", capability.getCapability("platformVersion"));
         MDC.put("appVersion", environment.getEnvironment("appVersion"));
@@ -63,11 +64,13 @@ public class TestListener extends BaseTest implements ITestListener {
     public void onTestSuccess(ITestResult result) {
         ExtendTestManager.getTest().log(LogStatus.PASS, "Test passed");
         setTestResult("PASSED");
+        setTestFailedMsg("-");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         setTestResult("FAILED");
+        setTestFailedMsg(result.getThrowable().getMessage());
         Object testClass = result.getInstance();
         WebDriver driver = ((BaseTest) testClass).getDriver();
         //Allure ScreenShotRobot and SaveTestLog
@@ -76,10 +79,9 @@ public class TestListener extends BaseTest implements ITestListener {
         saveTextLog(getTestCaseName() + " failed and screenshot taken!");
         //Take base64Screenshot screenshot for extent reports
         assert ((TakesScreenshot) driver) != null;
-        String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+        String screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
         //Extentreports log and screenshot operations for failed tests.
-        ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
-                ExtendTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+        ExtendTestManager.getTest().log(LogStatus.FAIL, "Test Failed",ExtendTestManager.getTest().addBase64ScreenShot(screenshot));
     }
 
     @Override
@@ -109,6 +111,7 @@ public class TestListener extends BaseTest implements ITestListener {
         //Log4j
         setTestFinishTime(TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis()));
         setTestDurationTime(getTestFinishTime() - getTestStartTime());
+        MDC.put("testFailedMsg",getTestFailedMsg());
         MDC.put("testDuration", getTestDurationTime());
         if (Objects.equals(getTestResult(), "PASSED")) {
             log.info(getTestResult());

@@ -2,13 +2,15 @@ package com.page;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
 class BasePage {
 
     public AppiumDriver driver;
+    private WebDriverWait wait;
     By closeButton = By.id("com.testm.app:id/back_cancel_button");
 
     //Constructor
@@ -17,83 +19,27 @@ class BasePage {
     }
 
     void click(By element) throws InterruptedException {
-        boolean clickStatus = false;
-        for (int i = 0; i < 15; i++) {
-            try {
-                WebElement clickElement = driver.findElement(element);
-                Assert.assertTrue(clickElement.isEnabled());
-                clickElement.click();
-                clickStatus = true;
-                break;
-            } catch (Exception | AssertionError e) {
-                Thread.sleep(500);
-            }
-        }
-        try {
-            Assert.assertTrue(clickStatus);
-        } catch (AssertionError e) {
-            throw new AssertionError(element + " is not click");
-        }
+        wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        driver.findElement(element).click();
     }
 
     String getText(By element) throws InterruptedException {
-        boolean status = false;
-        String msg = "";
-        for (int i = 0; i < 10; i++) {
-            try {
-                WebElement clickElement = driver.findElement(element);
-                Assert.assertTrue(clickElement.isEnabled());
-                msg = clickElement.getText();
-                status = true;
-                break;
-            } catch (Exception | AssertionError e) {
-                Thread.sleep(500);
-            }
-        }
-        try {
-            Assert.assertTrue(status);
-        } catch (AssertionError e) {
-            throw new AssertionError(element + " is not found");
-        }
-        return msg;
+        wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(element));
+        return driver.findElement(element).getText();
     }
 
     boolean isEnableElement(By element) throws InterruptedException {
-        boolean enableElement = false;
-        for (int i = 0; i < 5; i++) {
-            try {
-                Assert.assertTrue(driver.findElement(element).isEnabled());
-                enableElement = true;
-                break;
-            } catch (Exception | AssertionError e) {
-                Thread.sleep(500);
-            }
-        }
-        try {
-            Assert.assertTrue(enableElement);
-        } catch (
-                AssertionError e) {
-            throw new AssertionError(element + " is not enable");
-        }
+        wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(element));
+        Assert.assertTrue(driver.findElement(element).isEnabled());
         return true;
     }
 
     void assertText(By element, String text) throws InterruptedException {
-        for (int i=0; i<10; i++) {
-            boolean status=false;
-            String exceptionMsg = "";
-            try {
-                Assert.assertEquals(getText(element),text);
-                status=true;
-            }catch (Exception | AssertionError e){
-                exceptionMsg=e.getMessage();
-                Thread.sleep(1000);
-            }
-            try {
-                org.testng.Assert.assertTrue(status);
-            }catch (AssertionError e){
-                throw new AssertionError(exceptionMsg);
-            }
-        }
+        wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.presenceOfElementLocated(element));
+        Assert.assertEquals(driver.findElement(element).getText(),text);
     }
 }

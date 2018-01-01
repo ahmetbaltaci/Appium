@@ -23,7 +23,7 @@ public class SkipAppFunction extends BasePage {
             do {
                 click(nextButton);
             } while (isEnableElement(nextButton));
-        } catch (AssertionError e) {
+        } catch (AssertionError | Exception e) {
             Thread.sleep(10);
         }
         try {
