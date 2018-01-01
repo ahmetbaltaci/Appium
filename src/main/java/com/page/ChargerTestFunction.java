@@ -25,9 +25,11 @@ public class ChargerTestFunction extends BasePage {
      */
     private By hardwareButtonControlResult = By.id("com.testm.app:id/test_details");
     private By hardwareButtonControl = By.id("com.testm.app:id/hardwareButtons_bt");
+
     public ChargerTestFunction(AppiumDriver driver) {
         super(driver);
     }
+
 
     @Step("Click hardware button and charger is tested")
     public void chargerTest() throws InterruptedException {

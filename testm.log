@@ -1,0 +1,8 @@
+2018-01-01 21:13:44 INFO  - PASSED - Charger Test - chargerTest - 19 - 192.168.56.101:5555 - 6.0 - v.1.0.0 - 192.168.1.5 - -
+2018-01-01 21:16:22 INFO  - PASSED - Charger Test - chargerTest - 17 - 192.168.56.101:5555 - 6.0 - v.1.0.0 - 192.168.1.5 - - 
+2018-01-01 21:16:58 ERROR - FAILED - Hardware Button Test - hardwareControlButtonTest - 36 - 192.168.56.101:5555 - 6.0 - v.1.0.0 - 192.168.1.5 - Timed out after 30 seconds waiting for element to be clickable: By.id: com.testm.app:id/hardware_pb
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Ahmets-MacBook-Pro.local', ip: '192.168.1.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.2', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/application/app.apk, appPackage=com.testm.app, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.testm.app, appWaitActivity=com.testm.app.main.SplashActivity, --session-override=true, databaseEnabled=false, deviceName=192.168.56.101:5555, platform=LINUX, deviceUDID=192.168.56.101:5555, appActivity=com.testm.app.main.SplashActivity, desired={app=/application/app.apk, noReset=false, newCommandTimeout=60000, platformVersion=6.0, automationName=Appium, --session-override=true, platformName=Android, deviceName=192.168.56.101:5555}, newCommandTimeout=60000, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 13fbfbd1-577b-43e5-8edd-4c2d398ef083 

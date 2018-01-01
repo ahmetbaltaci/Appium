@@ -3,6 +3,7 @@ package com.setup;
 import com.page.SkipAppFunction;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -15,7 +16,8 @@ import java.net.MalformedURLException;
 public class BaseTest {
 
 
-    protected static AppiumDriver driver;
+    public static AppiumDriver driver;
+    protected WebDriverWait wait;
     private String env = System.getProperty("getEnvironment");
     private String device;
     private String version;
@@ -111,6 +113,7 @@ public class BaseTest {
         setVersion(environment.getEnvironment("version"));
         setUrl(environment.getEnvironment("url"));
         DeviceSetup.prepareDevice(getDevice(), getVersion(), getUrl());
+        wait = new WebDriverWait(driver,15);
         SkipAppFunction skipAppFunction = new SkipAppFunction(driver);
         skipAppFunction.clickNextButton();
     }

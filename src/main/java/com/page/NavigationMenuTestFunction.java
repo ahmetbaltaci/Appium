@@ -25,6 +25,7 @@ public class NavigationMenuTestFunction extends BasePage {
         super(driver);
     }
 
+
     @Step("Open Navigation Menu Bar")
     public void openNavigationMenu() throws InterruptedException {
         boolean status = false;
