@@ -4,16 +4,11 @@
 <suite name="Test Report">
 
 
-    <test name="Charger Test">
+    <test name="News Buton Test">
         <classes>
-            <class name="com.testCase.hardware.ChargerTest"/>
+            <class name="com.testCase.NewsBtnTest"/>
         </classes>
     </test>
 
-    <test name="Hardware Button Test">
-        <classes>
-            <class name="com.testCase.hardware.HardwareControlButtonTest"/>
-        </classes>
-    </test>
 
 </suite>

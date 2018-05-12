@@ -13,15 +13,15 @@ import org.testng.annotations.Test;
 
 @Listeners({TestListener.class})
 @Epic("Regression Tests")
-@Feature("Hardware")
+@Feature("News")
 
 
 public class NewsBtnTest extends BaseTest {
 
         @Test
         @Severity(SeverityLevel.BLOCKER)
-        @Description("Test Description: Is charger plugin check of your mobile device")
-        @Story("Charger Plugin Test")
+        @Description("Test Description: Click News Button and Assert Page Title")
+        @Story("News page")
         public void chargerTest() throws InterruptedException {
             NewsMenu menu = new NewsMenu(driver);
             menu.openNewsTab();
