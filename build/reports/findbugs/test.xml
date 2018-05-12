@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1526131617684" analysisTimestamp="1526131617869" release="">
+  <Project projectName="">
+    <Jar>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/build/classes/java/test</Jar>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/build/classes/java/main</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-testng/2.0-BETA21/917c7863dc2fd1eb70a550c0a80dbd1ba03fe771/allure-testng-2.0-BETA21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.10/368d38d0f6906934b572e1a26441b6f47c58b134/testng-6.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.appium/java-client/4.1.2/d6cd75553b08a9f4bf478842e3b005d9339c2bea/java-client-4.1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/f3cfee1e734668ac4e3574a9b47ad735476b4b04/extentreports-2.41.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/ru.yandex.qatools.ashot/ashot/1.5.4/630e052b98de4f4f82c2d16d803d7b30f468853d/ashot-1.5.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.48/bfcb96281ea3b59d626704f74bc6d625ff51cbce/jcommander-1.48.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-java/2.53.1/d90f85f4f389aa78b2d207ca1bfcca3fdefb71f0/selenium-java-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-chrome-driver/2.53.1/e8bb28896547d8bb6d9c11e4b103be563119fc5d/selenium-chrome-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-edge-driver/2.53.1/8d7ce00b6d53fd2feebd12ae831c1b35e6577e96/selenium-edge-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/2.53.1/5b1aa0babfb577310689a59b2ace7f342d40d70b/selenium-firefox-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-ie-driver/2.53.1/63c8e86d544b39026c0f803ec3c863a144995ad6/selenium-ie-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-safari-driver/2.53.1/731e322601f56f1867e665bcb0942e154277b0cd/selenium-safari-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/2.53.1/af951906201e898e1d35a9ff63b297bb633d1d03/selenium-support-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-leg-rc/2.53.1/6ac994ea069b57e126e222374ed3ebbc85a08529/selenium-leg-rc-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/2.53.1/5b049195915b0120259a063db049e1ffa874550e/selenium-remote-driver-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/2.53.1/b00ff9f84bfa214fda742c1287a06d447e92910e/selenium-api-2.53.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/htmlunit-driver/2.21/4c19c164835580db1d46887b43392dae0c255d50/htmlunit-driver-2.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit/2.21/3e752dae0006ad516bf6f4138316db7b262912d0/htmlunit-2.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/22b4c53dd9b6761024258de8f9240c3dce6ea368/httpmime-4.5.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-descriptions-javadoc/2.0-BETA21/413fcabe082669f3c7f5b83f3da265ed279f9d46/allure-descriptions-javadoc-2.0-BETA21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-java-commons/2.0-BETA21/be4cdeb2fd93071b01df1ec47fc3fafd692799e4/allure-java-commons-2.0-BETA21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-validator/commons-validator/1.5.1/86d05a46e8f064b300657f751b5a98c62807e2a0/commons-validator-1.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/3.2.4/42c972dee25a436b32c6027e848287ff47ed6750/cglib-nodep-3.2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.2.RELEASE/e52782b824e097c3b1586b497fc6be0e95020770/spring-context-4.3.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.xerial/sqlite-jdbc/3.8.11.1/b33358a3e242b21f2fe518dc1471fab0a49a04a/sqlite-jdbc-3.8.11.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.23/cd143cd8c02a9f838e3cb75a6dfe133750437f6d/freemarker-2.3.23.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver/3.0.4/993f351546d3e462126eefb901383ccec4049c6f/mongodb-driver-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.4/b31526a230871fbe285fbcbe2813f9c0839ae9b0/httpcore-4.4.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.2/7a87d845ad3a155297e8f67d9008f4c1e5656b71/commons-beanutils-1.9.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.2.RELEASE/caef216e995f565dd4ab165ec5918ff44487615d/spring-aop-4.3.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.2.RELEASE/9e87f48f65a33a017f2dd027911947a28be29f93/spring-beans-4.3.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.2.RELEASE/7676acd4dde9d186b7f882edce3131dc62dcb590/spring-expression-4.3.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.2.RELEASE/fd2f3cf45d3c84f293cb7ee3ab7d24c979495552/spring-core-4.3.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/1.8.1/3dec9b9c7ea9342d4dbe8c38560080d85b44a015/commons-digester-1.8.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/3.0.4/adbea64839bb93c5ac07b93d9453a8710ff6ecc9/mongodb-driver-core-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.mongodb/bson/3.0.4/2ecf10d61967c2c0076a6f561088a0e15848c212/bson-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.3/8dfb9facd0830a27b1b5f29f84593f0aeee7773b/commons-exec-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/4.1.0/23457ad1cf75c2c16763330de5565a0e67b4bc0a/jna-platform-4.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.5.7.Final/811465e6dfc89d7c78d21de6a9747b6046cb5403/netty-3.5.7.Final.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.2/d55d3f02a56ec4c25695fe67e1334ff8c2ecea23/xalan-2.7.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/htmlunit-core-js/2.17/4316d68f449d42f69faf4ee255aa31b03e4f7dd5/htmlunit-core-js-2.17.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.sourceforge.htmlunit/neko-htmlunit/2.21/a714aa20a2a6e04ada63805e1a16ad0540aa65e/neko-htmlunit-2.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/net.sourceforge.cssparser/cssparser/0.9.18/61c015378d27b5e245a5deb7a324c7e716b4706a/cssparser-0.9.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.2.15.v20160210/ca9769107f3b8111102c5d4f482122dd116fb711/websocket-client-9.2.15.v20160210.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/xalan/serializer/2.7.2/24247f3bb052ee068971393bdb83e04512bb1c3c/serializer-2.7.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.11.0/9bb329db1cfc4e22462c9d6b43a8432f5850e92c/xercesImpl-2.11.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.w3c.css/sac/1.3/cdb2dcb4e22b83d6b32b93095f644c3462739e82/sac-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.2.15.v20160210/ee5616ec65d6c8f05fe16ee4dbb6723b2ebff470/websocket-common-9.2.15.v20160210.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.2.15.v20160210/5a3af41803c12b0f3628ed8927a8cedb42972169/jetty-io-9.2.15.v20160210.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.2.15.v20160210/ccd245541cc63311bdcfe551525bd7d82ea5e92c/jetty-util-9.2.15.v20160210.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.4.01/3789d9fada2d3d458c4ba2de349d48780f381ee3/xml-apis-1.4.01.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.2.15.v20160210/f0340017129a65097824dd62a04b3c887f397dd9/websocket-api-9.2.15.v20160210.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-api/1.0-BETA6/6f5af1613004e32f8582669f299fabe9cae2ed53/allure2-model-api-1.0-BETA6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.10/1a14fe9e912f6e8bdbb5429b78b4090d8b47bc1/aspectjrt-1.8.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.jooq/joor/0.9.6/c8f9c6a344e932d9641cc75d5324dbbdbd85cd84/joor-0.9.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-jackson/1.0-BETA6/c313a7059f078c95bb350b75e75fc108fbacc8ee/allure2-model-jackson-1.0-BETA6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure2-model-pojo/1.0-BETA6/89183715ae6c2c923bedfa67bb2f1e5ecca2d1bd/allure2-model-pojo-1.0-BETA6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-core/1.14/afff8f1774994aa973ef90bc8d38ddf089b9d6d9/tika-core-1.14.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.7.0/797bfd1b8f5b5133b9e2112df20911a22a325d9c/jackson-module-jaxb-annotations-2.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.0/7d3430de9f2b600b074ba3bc007edcfbc4bbf4fb/jackson-databind-2.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jackson-annotations-2.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/ahmetbaltaci/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.0/5f2bfd0866bcacbcc7c25ce25f80b5aeed0f72f/jackson-core-2.7.0.jar</AuxClasspathEntry>
+    <SrcDir>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/TestListener.java</SrcDir>
+    <SrcDir>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/extendManager/ExtendTestManager.java</SrcDir>
+    <SrcDir>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/extendManager/ExtendManager.java</SrcDir>
+    <SrcDir>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/com/setup/BaseTest.java</SrcDir>
+    <SrcDir>/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/com/setup/DeviceSetup.java</SrcDir>
+  </Project>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" instanceHash="8a9a94622a90f3d1b1d0ab5f3d0b79c5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="218">
+    <ShortMessage>Field should be package protected</ShortMessage>
+    <LongMessage>com.setup.BaseTest.driver should be package protected</LongMessage>
+    <Class classname="com.setup.BaseTest" primary="true">
+      <SourceLine classname="com.setup.BaseTest" start="15" end="109" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>At BaseTest.java:[lines 15-109]</Message>
+      </SourceLine>
+      <Message>In class com.setup.BaseTest</Message>
+    </Class>
+    <Field classname="com.setup.BaseTest" name="driver" signature="Lio/appium/java_client/AppiumDriver;" isStatic="true" primary="true">
+      <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>In BaseTest.java</Message>
+      </SourceLine>
+      <Message>Field com.setup.BaseTest.driver</Message>
+    </Field>
+    <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java" synthetic="true">
+      <Message>In BaseTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" instanceHash="6d821713622c992b4772edd84095e8d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: com.setup.BaseTest.env</LongMessage>
+    <Class classname="com.setup.BaseTest" primary="true">
+      <SourceLine classname="com.setup.BaseTest" start="15" end="109" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>At BaseTest.java:[lines 15-109]</Message>
+      </SourceLine>
+      <Message>In class com.setup.BaseTest</Message>
+    </Class>
+    <Field classname="com.setup.BaseTest" name="env" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>In BaseTest.java</Message>
+      </SourceLine>
+      <Message>Field com.setup.BaseTest.env</Message>
+    </Field>
+    <SourceLine classname="com.setup.BaseTest" primary="true" start="20" end="20" startBytecode="10" endBytecode="10" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+      <Message>At BaseTest.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" instanceHash="d4fa6504e8a0895262edb05e636e2042" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unread public/protected field</ShortMessage>
+    <LongMessage>Unread public/protected field: com.setup.BaseTest.wait</LongMessage>
+    <Class classname="com.setup.BaseTest" primary="true">
+      <SourceLine classname="com.setup.BaseTest" start="15" end="109" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>At BaseTest.java:[lines 15-109]</Message>
+      </SourceLine>
+      <Message>In class com.setup.BaseTest</Message>
+    </Class>
+    <Field classname="com.setup.BaseTest" name="wait" signature="Lorg/openqa/selenium/support/ui/WebDriverWait;" isStatic="false" primary="true">
+      <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>In BaseTest.java</Message>
+      </SourceLine>
+      <Message>Field com.setup.BaseTest.wait</Message>
+    </Field>
+    <SourceLine classname="com.setup.BaseTest" primary="true" start="103" end="103" startBytecode="18" endBytecode="18" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+      <Message>At BaseTest.java:[line 103]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" instanceHash="fbc9d29da2621e99353b69b0330faa2a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: com.setup.BaseTest.suiteName</LongMessage>
+    <Class classname="com.setup.BaseTest" primary="true">
+      <SourceLine classname="com.setup.BaseTest" start="15" end="109" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>At BaseTest.java:[lines 15-109]</Message>
+      </SourceLine>
+      <Message>In class com.setup.BaseTest</Message>
+    </Class>
+    <Field classname="com.setup.BaseTest" name="suiteName" signature="Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java">
+        <Message>In BaseTest.java</Message>
+      </SourceLine>
+      <Message>Field com.setup.BaseTest.suiteName</Message>
+    </Field>
+    <SourceLine classname="com.setup.BaseTest" sourcefile="BaseTest.java" sourcepath="com/setup/BaseTest.java" synthetic="true">
+      <Message>In BaseTest.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" instanceHash="7719291bb5c609cb6bc083bf49ec8101" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="440">
+    <ShortMessage>Code contains a hard coded reference to an absolute pathname</ShortMessage>
+    <LongMessage>Hard coded reference to an absolute pathname in com.setup.DeviceSetup.prepareDevice()</LongMessage>
+    <Class classname="com.setup.DeviceSetup" primary="true">
+      <SourceLine classname="com.setup.DeviceSetup" start="16" end="36" sourcefile="DeviceSetup.java" sourcepath="com/setup/DeviceSetup.java">
+        <Message>At DeviceSetup.java:[lines 16-36]</Message>
+      </SourceLine>
+      <Message>In class com.setup.DeviceSetup</Message>
+    </Class>
+    <Method classname="com.setup.DeviceSetup" name="prepareDevice" signature="()Lio/appium/java_client/AppiumDriver;" isStatic="true" primary="true">
+      <SourceLine classname="com.setup.DeviceSetup" start="20" end="36" startBytecode="0" endBytecode="78" sourcefile="DeviceSetup.java" sourcepath="com/setup/DeviceSetup.java"/>
+      <Message>In method com.setup.DeviceSetup.prepareDevice()</Message>
+    </Method>
+    <String value="/application" role="FILE_NAME">
+      <Message>File name /application</Message>
+    </String>
+    <SourceLine classname="com.setup.DeviceSetup" primary="true" start="20" end="20" startBytecode="6" endBytecode="6" sourcefile="DeviceSetup.java" sourcepath="com/setup/DeviceSetup.java">
+      <Message>At DeviceSetup.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" abbrev="UrF" category="STYLE">
+    <ShortDescription>Unread public/protected field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_HARDCODED_ABSOLUTE_FILENAME" abbrev="DMI" category="STYLE">
+    <ShortDescription>Code contains a hard coded reference to an absolute pathname</ShortDescription>
+    <Details><![CDATA[
+
+<p>This code constructs a File object using a hard coded to an absolute pathname
+(e.g., <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");</code>
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Unused field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="MS_PKGPROTECT" abbrev="MS" category="MALICIOUS_CODE">
+    <ShortDescription>Field should be package protected</ShortDescription>
+    <Details><![CDATA[
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="DMI" cweid="440">
+    <Description>Dubious method invocation</Description>
+  </BugCode>
+  <BugCode abbrev="MS" cweid="218">
+    <Description>Mutable static field</Description>
+  </BugCode>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 12 May 2018 16:26:57 +0300" total_classes="5" referenced_classes="55" total_bugs="5" total_size="181" num_packages="3" java_version="1.8.0_161" vm_version="25.161-b12" cpu_seconds="12.16" clock_seconds="6.21" peak_mbytes="123.08" alloc_mbytes="1820.50" gc_seconds="0.10" priority_2="5">
+    <FileStats path="com/setup/BaseTest.java" bugCount="4" size="65" bugHash="ff247b0193d5f3f27a70accec7b31557"/>
+    <FileStats path="com/setup/DeviceSetup.java" bugCount="1" size="21" bugHash="1f7ac1559e0713cab7a306aafefb8a01"/>
+    <FileStats path="listener/TestListener.java" bugCount="0" size="69"/>
+    <FileStats path="listener/extendManager/ExtendManager.java" bugCount="0" size="9"/>
+    <FileStats path="listener/extendManager/ExtendTestManager.java" bugCount="0" size="17"/>
+    <PackageStats package="com.setup" total_bugs="5" total_types="2" total_size="86" priority_2="5">
+      <ClassStats class="com.setup.BaseTest" sourceFile="BaseTest.java" interface="false" size="65" bugs="4" priority_2="4"/>
+      <ClassStats class="com.setup.DeviceSetup" sourceFile="DeviceSetup.java" interface="false" size="21" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="listener" total_bugs="0" total_types="1" total_size="69">
+      <ClassStats class="listener.TestListener" sourceFile="TestListener.java" interface="false" size="69" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="listener.extendManager" total_bugs="0" total_types="2" total_size="26">
+      <ClassStats class="listener.extendManager.ExtendManager" sourceFile="ExtendManager.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="listener.extendManager.ExtendTestManager" sourceFile="ExtendTestManager.java" interface="false" size="17" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1085" invocations="595" avgMicrosecondsPerInvocation="1824" maxMicrosecondsPerInvocation="71233" standardDeviationMircosecondsPerInvocation="5866"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="848" invocations="589" avgMicrosecondsPerInvocation="1441" maxMicrosecondsPerInvocation="94197" standardDeviationMircosecondsPerInvocation="7264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="488" invocations="55" avgMicrosecondsPerInvocation="8888" maxMicrosecondsPerInvocation="99016" standardDeviationMircosecondsPerInvocation="22101"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="247" invocations="95" avgMicrosecondsPerInvocation="2610" maxMicrosecondsPerInvocation="91017" standardDeviationMircosecondsPerInvocation="10061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="235" invocations="55" avgMicrosecondsPerInvocation="4282" maxMicrosecondsPerInvocation="82703" standardDeviationMircosecondsPerInvocation="12619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="192" invocations="554" avgMicrosecondsPerInvocation="347" maxMicrosecondsPerInvocation="57435" standardDeviationMircosecondsPerInvocation="2915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="169" invocations="143" avgMicrosecondsPerInvocation="1186" maxMicrosecondsPerInvocation="71556" standardDeviationMircosecondsPerInvocation="6081"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="124" invocations="55" avgMicrosecondsPerInvocation="2264" maxMicrosecondsPerInvocation="51924" standardDeviationMircosecondsPerInvocation="8612"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="96" invocations="126" avgMicrosecondsPerInvocation="767" maxMicrosecondsPerInvocation="42066" standardDeviationMircosecondsPerInvocation="4166"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

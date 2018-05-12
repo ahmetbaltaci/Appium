@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6">
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/main/java/com/page/BasePage.java">
+<error line="10" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="14" column="25" severity="error" message="Variable &apos;driver&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="15" column="26" severity="error" message="Variable &apos;wait&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="17" column="8" severity="error" message="Variable &apos;closeButton&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="20" column="5" severity="error" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="22" column="41" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="43" column="67" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/main/java/com/setup/GetIp.java">
+<error line="12" column="21" severity="error" message="Variable &apos;ip&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+</file>
+</checkstyle>

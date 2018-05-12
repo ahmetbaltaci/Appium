@@ -2,8 +2,6 @@ package listener;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.setup.BaseTest;
-import com.setup.GetDeviceCapability;
-import com.setup.GetEnvironment;
 import com.setup.GetIp;
 import io.qameta.allure.Attachment;
 import listener.extendManager.ExtendManager;
@@ -25,8 +23,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     private String testResult;
     private Logger log = LogManager.getLogger(getClass().getName());
-    private GetDeviceCapability capability = new GetDeviceCapability();
-    private GetEnvironment environment = new GetEnvironment();
+
 
     @Attachment(value = "{0}", type = "text/plain")
     private static String saveTextLog(String message) {
@@ -55,9 +52,9 @@ public class TestListener extends BaseTest implements ITestListener {
     public void onTestStart(ITestResult result) {
         ExtendTestManager.startTest(result.getMethod().getMethodName(), "");
         MDC.put("testMethodName",result.getName());
-        MDC.put("deviceName", capability.getCapability("deviceName"));
-        MDC.put("platformVersion", capability.getCapability("platformVersion"));
-        MDC.put("appVersion", environment.getEnvironment("appVersion"));
+        MDC.put("deviceName","Ahmet");
+        MDC.put("platformVersion","10.2");
+        MDC.put("appVersion", "3.4.1");
     }
 
     @Override

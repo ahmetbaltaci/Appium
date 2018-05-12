@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			</p>
+<h2>Metrics</h2>
+<p>181 lines of code analyzed,
+	in 5 classes, 
+	in 3 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right"/>
+<td align="right">NaN</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">5</td>
+<td align="right">27.62</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>5</b>
+</td>
+<td align="right">
+<b>27.62</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>5</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>com.setup.BaseTest.driver should be package protected<br/>
+<br/>
+<br/>In file BaseTest.java,
+					
+						lines 
+						    to <br/>In class com.setup.BaseTest<br/>Field com.setup.BaseTest.driver<br/>In BaseTest.java</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.setup.BaseTest.env<br/>
+<br/>
+<br/>In file BaseTest.java,
+					
+						line 20<br/>In class com.setup.BaseTest<br/>Field com.setup.BaseTest.env<br/>At BaseTest.java:[line 20]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UUF_UNUSED_FIELD">Unused field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unused field: com.setup.BaseTest.suiteName<br/>
+<br/>
+<br/>In file BaseTest.java,
+					
+						lines 
+						    to <br/>In class com.setup.BaseTest<br/>Field com.setup.BaseTest.suiteName<br/>In BaseTest.java</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DMI_HARDCODED_ABSOLUTE_FILENAME">Code contains a hard coded reference to an absolute pathname</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Hard coded reference to an absolute pathname in com.setup.DeviceSetup.prepareDevice()<br/>
+<br/>
+<br/>In file DeviceSetup.java,
+					
+						line 20<br/>In class com.setup.DeviceSetup<br/>In method com.setup.DeviceSetup.prepareDevice()<br/>File name /application<br/>At DeviceSetup.java:[line 20]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread public/protected field: com.setup.BaseTest.wait<br/>
+<br/>
+<br/>In file BaseTest.java,
+					
+						line 103<br/>In class com.setup.BaseTest<br/>Field com.setup.BaseTest.wait<br/>At BaseTest.java:[line 103]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DMI_HARDCODED_ABSOLUTE_FILENAME">Code contains a hard coded reference to an absolute pathname</a>
+</h2>
+
+<p>This code constructs a File object using a hard coded to an absolute pathname
+(e.g., <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");</code>
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_PKGPROTECT">Field should be package protected</a>
+</h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="URF_UNREAD_FIELD">Unread field</a>
+</h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">Unread public/protected field</a>
+</h2>
+
+  <p> This field is never read.&nbsp;
+The field is public or protected, so perhaps
+    it is intended to be used with classes not seen as part of the analysis. If not,
+consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UUF_UNUSED_FIELD">Unused field</a>
+</h2>
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

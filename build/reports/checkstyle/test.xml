@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.6">
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/com/setup/BaseTest.java">
+<error line="18" column="32" severity="error" message="Variable &apos;driver&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="100" severity="error" message="Annotation cannot have closing parenthesis." source="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck"/>
+<error line="103" column="41" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/com/setup/DeviceSetup.java">
+<error line="4" column="8" severity="error" message="Unused import - io.appium.java_client.android.AndroidDriver." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="16" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="19" severity="error" message="&apos;method def modifier&apos; have incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+<error line="20" column="14" severity="error" message="Variable &apos;appDir&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="21" column="14" severity="error" message="Variable &apos;app&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="22" column="29" severity="error" message="Variable &apos;capabilities&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="26" column="69" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="27" column="43" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="30" column="55" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="31" column="46" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="37" severity="error" message="&apos;method def rcurly&apos; have incorrect indentation level 3, expected level should be 4." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/TestListener.java">
+<error line="22" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="54" column="34" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="55" column="30" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="56" column="35" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="63" column="23" severity="error" message="The String &quot;PASSED&quot; appears 2 times in the file." source="com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"/>
+<error line="69" column="23" severity="error" message="The String &quot;FAILED&quot; appears 2 times in the file." source="com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"/>
+<error line="71" column="16" severity="error" message="Variable &apos;testClass&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="72" column="19" severity="error" message="Variable &apos;driver&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="74" column="29" severity="error" message="&apos;{&apos; at column 29 should have line break after." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="74" column="30" severity="error" message="&apos;{&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="74" column="56" severity="error" message="&apos;;&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="74" column="56" severity="error" message="&apos;}&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="79" column="16" severity="error" message="Variable &apos;screenshot&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="81" severity="error" message="Line is longer than 120 characters (found 131)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="81" column="71" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="97" column="15" severity="error" message="Variable &apos;ip&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="111" column="33" severity="error" message="&apos;,&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/extendManager/ExtendManager.java">
+<error line="6" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="6" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="9" column="25" severity="error" message="&apos;static&apos; modifier out of order with the JLS suggestions." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="12" column="20" severity="error" message="Variable &apos;workingDir&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+</file>
+<file name="/Users/ahmetbaltaci/Developer/Project/AppiumIOS/src/test/java/listener/extendManager/ExtendTestManager.java">
+<error line="12" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="14" column="16" severity="error" message="Variable &apos;extentTestMap&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="15" column="26" severity="error" message="Variable &apos;extent&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="26" column="20" severity="error" message="Variable &apos;test&apos; should be declared final." source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+</file>
+</checkstyle>

@@ -1,6 +1,5 @@
 package com.setup;
 
-import com.page.SkipAppFunction;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,27 +17,14 @@ public class BaseTest {
 
     public static AppiumDriver driver;
     protected WebDriverWait wait;
-    private String env = System.getProperty("getEnvironment");
-    private String device;
-    private String version;
-    private String url;
     private String testCaseName;
     private long testStartTime;
     private long testFinishTime;
     private long testDurationTime;
-    private String suiteName;
     private String testFailedMsg;
 
     public WebDriver getDriver() {
         return driver;
-    }
-
-    protected String getSuiteName() {
-        return suiteName;
-    }
-
-    protected void setSuiteName(String suiteName) {
-        this.suiteName = suiteName;
     }
 
     protected long getTestStartTime() {
@@ -81,41 +67,11 @@ public class BaseTest {
         this.testFailedMsg = testFailedMsg;
     }
 
-    private String getDevice() {
-        return device;
-    }
-
-    private void setDevice(String device) {
-        this.device = device;
-    }
-
-    private String getVersion() {
-        return version;
-    }
-
-    private void setVersion(String version) {
-        this.version = version;
-    }
-
-    private String getUrl() {
-        return url;
-    }
-
-    private void setUrl(String url) {
-        this.url = url;
-    }
-
 
     @BeforeSuite()
     public void setUp() throws MalformedURLException, InterruptedException, FileNotFoundException {
-        GetEnvironment environment = new GetEnvironment();
-        setDevice(environment.getEnvironment("device"));
-        setVersion(environment.getEnvironment("version"));
-        setUrl(environment.getEnvironment("url"));
-        DeviceSetup.prepareDevice(getDevice(), getVersion(), getUrl());
+        DeviceSetup.prepareDevice();
         wait = new WebDriverWait(driver,15);
-        SkipAppFunction skipAppFunction = new SkipAppFunction(driver);
-        skipAppFunction.clickNextButton();
     }
 
     @AfterSuite

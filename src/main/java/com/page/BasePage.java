@@ -14,7 +14,6 @@ class BasePage {
     public AppiumDriver driver;
     public WebDriverWait wait;
 
-    By closeButton = By.id("com.testm.app:id/back_cancel_button");
 
     //Constructor
     public BasePage(AppiumDriver driver) {
